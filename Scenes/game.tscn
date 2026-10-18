@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b75ri0amjpmot"]
+
+[ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
+
+[node name="Game" type="Node2D" unique_id=2071835739]
+
+[node name="TextureRect" parent="." unique_id=1061855505 instance=ExtResource("1_ebmjs")]
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 42.0
+offset_bottom = 43.0
+texture = ExtResource("2_qxrlw")
+
+[node name="TextureRect2" parent="." unique_id=1946607140 instance=ExtResource("1_ebmjs")]
+offset_left = 111.0
+offset_top = 4.0
+offset_right = 151.0
+offset_bottom = 44.0
+
+[node name="TextureRect3" parent="." unique_id=639951782 instance=ExtResource("1_ebmjs")]
+offset_left = 271.0
+offset_top = 4.0
+offset_right = 311.0
+offset_bottom = 44.0
+
+[node name="TextureRect4" parent="." unique_id=201067813 instance=ExtResource("1_ebmjs")]
+offset_left = 111.0
+offset_top = 104.0
+offset_right = 151.0
+offset_bottom = 144.0
