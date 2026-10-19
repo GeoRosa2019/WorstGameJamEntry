@@ -6,6 +6,7 @@
 custom_maximum_size = Vector2(40, 40)
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 0
 expand_mode = 1
 script = ExtResource("2_hmi3e")
 

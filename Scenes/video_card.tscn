@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ipxw3dgu4a14"]
+
+[ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_1gqgf"]
+[ext_resource type="Texture2D" uid="uid://1ya3e3b2oxo6" path="res://Assets/Placeholder Images/Stock Graphics Card.jpg" id="2_b2olt"]
+
+[node name="Video Card" type="Node2D" unique_id=554064981]
+
+[node name="TextureRect" parent="." unique_id=1061855505 instance=ExtResource("1_1gqgf")]
+offset_left = 17.0
+offset_top = 16.0
+offset_right = 57.0
+offset_bottom = 56.0
+texture = ExtResource("2_b2olt")
+
+[node name="TextureRect2" parent="." unique_id=1809910301 instance=ExtResource("1_1gqgf")]
+offset_left = 160.0
+offset_top = 19.0
+offset_right = 200.0
+offset_bottom = 59.0

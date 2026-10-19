@@ -1,31 +1,72 @@
 [gd_scene format=3 uid="uid://b75ri0amjpmot"]
 
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
 
 [node name="Game" type="Node2D" unique_id=2071835739]
+position = Vector2(0, 1)
 
-[node name="TextureRect" parent="." unique_id=1061855505 instance=ExtResource("1_ebmjs")]
-offset_left = 2.0
-offset_top = 3.0
-offset_right = 42.0
-offset_bottom = 43.0
+[node name="GameManager" type="Node2D" parent="." unique_id=148428968 node_paths=PackedStringArray("winLabel")]
+script = ExtResource("1_wrm1d")
+winLabel = NodePath("Label")
+
+[node name="Label" type="Label" parent="GameManager" unique_id=724551117]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PC Built Successfully!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Parts" type="Node" parent="." unique_id=616493389]
+
+[node name="TextureRect" parent="Parts" unique_id=1061855505 instance=ExtResource("1_ebmjs")]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 43.0
+offset_bottom = 44.0
 texture = ExtResource("2_qxrlw")
+partName = "gpu"
 
-[node name="TextureRect2" parent="." unique_id=1946607140 instance=ExtResource("1_ebmjs")]
+[node name="TextureRect5" parent="Parts" unique_id=490311645 instance=ExtResource("1_ebmjs")]
+offset_left = 6.0
+offset_top = 128.0
+offset_right = 46.0
+offset_bottom = 168.0
+texture = ExtResource("2_qxrlw")
+partName = "ram"
+
+[node name="TextureRect6" parent="Parts" unique_id=1523729085 instance=ExtResource("1_ebmjs")]
+offset_left = 3.0
+offset_top = 215.0
+offset_right = 43.0
+offset_bottom = 255.0
+texture = ExtResource("2_qxrlw")
+partName = "ram"
+
+[node name="Motherboard" type="Node" parent="." unique_id=1393907119]
+
+[node name="TextureRect2" parent="Motherboard" unique_id=1946607140 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
 offset_left = 111.0
-offset_top = 4.0
+offset_top = 5.0
 offset_right = 151.0
-offset_bottom = 44.0
+offset_bottom = 45.0
+correctPort = "gpu"
 
-[node name="TextureRect3" parent="." unique_id=639951782 instance=ExtResource("1_ebmjs")]
+[node name="TextureRect3" parent="Motherboard" unique_id=639951782 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
 offset_left = 271.0
-offset_top = 4.0
+offset_top = 5.0
 offset_right = 311.0
-offset_bottom = 44.0
+offset_bottom = 45.0
+correctPort = "ram"
 
-[node name="TextureRect4" parent="." unique_id=201067813 instance=ExtResource("1_ebmjs")]
-offset_left = 111.0
-offset_top = 104.0
-offset_right = 151.0
-offset_bottom = 144.0
+[node name="TextureRect4" parent="Motherboard" unique_id=201067813 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
+offset_left = 112.0
+offset_top = 105.0
+offset_right = 152.0
+offset_bottom = 145.0
+correctPort = "ram"
