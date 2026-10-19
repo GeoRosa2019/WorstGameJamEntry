@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://t7jf3qh5ga1x"]
+
+[ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/grandma_notes.tscn" id="1_2ppmm"]
+
+[node name="MainUI" type="Control" unique_id=1206325536]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="GrandmaNotes" parent="." unique_id=2135006344 instance=ExtResource("1_2ppmm")]
+layout_mode = 1
