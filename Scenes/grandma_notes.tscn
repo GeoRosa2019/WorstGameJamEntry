@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cleb5ojwot3yv"]
+
+[ext_resource type="Script" uid="uid://cpomxycjhx2wm" path="res://Scripts/GrandmaNotes.gd" id="1_acq8x"]
+[ext_resource type="Texture2D" uid="uid://c3wa4saw8mllu" path="res://Assets/Placeholder Images/post-it-note-with-beautiful-shadow-1-3655962658.png" id="2_acq8x"]
+
+[node name="GrandmaNotes" type="Control" unique_id=2135006344]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_acq8x")
+
+[node name="NoteIconButton" type="Button" parent="." unique_id=1954202908]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -68.0
+offset_right = 68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_acq8x")
+icon_alignment = 1
+expand_icon = true
+
+[node name="NotePopup" type="PanelContainer" parent="." unique_id=297518111]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1310.0
+offset_top = 260.0
+offset_right = -910.0
+offset_bottom = 572.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="NotePopup" unique_id=1356162240]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NotePopup/MarginContainer" unique_id=1540686542]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NotePopup/MarginContainer/VBoxContainer" unique_id=387895731]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="NotePopup/MarginContainer/VBoxContainer/HBoxContainer" unique_id=825369309]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Grandma's PC Guide"
+
+[node name="CloseButton" type="Button" parent="NotePopup/MarginContainer/VBoxContainer/HBoxContainer/Label" unique_id=127054761]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -18.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "X"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="NotePopup/MarginContainer/VBoxContainer" unique_id=396741223]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InstructionsLabel" type="RichTextLabel" parent="NotePopup/MarginContainer/VBoxContainer/ScrollContainer" unique_id=398387691]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[b]How to Build Grandma's PC:[/b]
+
+1. [color=lightblue]Tools:[/color] Click a tool in the bottom-left bar to equip it (Screwdriver, Thermal Paste).
+2. [color=yellow]Parts:[/color] Open the Parts panel in the bottom-right and drag a component to the frame.
+3. [color=green]Sockets:[/color] Ensure CPU and RAM socket types match the Motherboard before dropping!
+
+[i]Tip: Remember to apply thermal paste before attaching the CPU cooler![/i]"
+fit_content = true
+
+[node name="CloseDialogButton" type="Button" parent="NotePopup/MarginContainer/VBoxContainer" unique_id=1936657861]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 10
+text = "Got it, Grandma!"
