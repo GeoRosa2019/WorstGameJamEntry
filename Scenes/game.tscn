@@ -3,10 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
-[ext_resource type="PackedScene" uid="uid://t7jf3qh5ga1x" path="res://Scenes/main_ui.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://t7jf3qh5ga1x" path="res://Scenes/Main_UI/main_ui.tscn" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=2071835739]
-position = Vector2(0, 1)
 
 [node name="GameManager" type="Node2D" parent="." unique_id=148428968 node_paths=PackedStringArray("winLabel")]
 script = ExtResource("1_wrm1d")
