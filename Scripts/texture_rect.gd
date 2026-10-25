@@ -8,6 +8,20 @@ signal partChange
 var draggedTexture: Texture2D = null
 var draggedName: String = ""
 
+# for The game manager screipt to reset
+var startTexture: Texture2D
+var startName: String
+
+func _ready():
+	startTexture = texture
+	startName = partName
+
+func resetToStart():
+	texture = startTexture
+	partName = startName
+	appliedTools.clear()
+	updateColor()
+
 # Triggers when you click and drag
 func _get_drag_data(at_position):
 	if texture == null:
