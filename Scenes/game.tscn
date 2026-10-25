@@ -18,11 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
 [ext_resource type="Texture2D" uid="uid://gvyhjkdvlxr1" path="res://Assets/Placeholder Images/screwdriver.jpeg" id="6_ldgsr"]
 [ext_resource type="Texture2D" uid="uid://2u4inm6hjpa5" path="res://Assets/Placeholder Images/pipe.jpeg" id="7_o5yvi"]
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
-[ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="11_rku1e"]
-[ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="12_rfjv2"]
 >>>>>>> Stashed changes
 
 [node name="Game" type="Node2D" unique_id=2071835739]
@@ -127,9 +122,6 @@ texture = ExtResource("7_o5yvi")
 expand_mode = 1
 script = ExtResource("4_i6g32")
 toolName = "wrench"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 
 [node name="Granny\'sJamMastered" type="AudioStreamPlayer" parent="." unique_id=534286486]
@@ -137,7 +129,6 @@ stream = ExtResource("5_wowpa")
 autoplay = true
 bus = &"Music"
 
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 [node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("6_i6g32")]
 anchors_preset = 8
@@ -170,18 +161,4 @@ offset_left = 554.0
 offset_top = 309.0
 offset_right = 554.0
 offset_bottom = 309.0
->>>>>>> Stashed changes
-=======
-[node name="GrandmaNotes" parent="." unique_id=2135006344 instance=ExtResource("11_rku1e")]
-offset_left = 1083.0
-offset_top = 68.0
-offset_right = 1083.0
-offset_bottom = 68.0
-
-[node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("12_rfjv2")]
-visible = false
-offset_left = 580.0
-offset_top = 316.0
-offset_right = 580.0
-offset_bottom = 316.0
 >>>>>>> Stashed changes
