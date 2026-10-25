@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://t7jf3qh5ga1x"]
 
 [ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="1_2ppmm"]
-[ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="2_kqhp1"]
 
 [node name="MainUI" type="Control" unique_id=1206325536]
 layout_mode = 3
@@ -17,16 +16,3 @@ size_flags_vertical = 6
 
 [node name="GrandmaNotes" parent="." unique_id=2135006344 instance=ExtResource("1_2ppmm")]
 layout_mode = 1
-
-[node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("2_kqhp1")]
-visible = false
-layout_mode = 1
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -450.0
-offset_top = 200.0
-offset_right = -450.0
-offset_bottom = 200.0
-grow_horizontal = 1
-grow_vertical = 1

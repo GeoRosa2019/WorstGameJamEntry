@@ -52,7 +52,154 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Resume"
 
+[node name="SettingsButton" type="Button" parent="ColorRect/PanelContainer/MarginContainer/VBoxContainer" unique_id=358767099]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
 [node name="QuitButton" type="Button" parent="ColorRect/PanelContainer/MarginContainer/VBoxContainer" unique_id=1628333445]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Quit"
+
+[node name="SettingsMenu" type="PanelContainer" parent="." unique_id=1259624331]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -104.0
+offset_right = 144.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="SettingsMenu" unique_id=827065364]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsMenu" unique_id=1948061634]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsMenu/MarginContainer" unique_id=1116174993]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1894989849]
+layout_mode = 2
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="AudioGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1761125557]
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1313546261]
+layout_mode = 2
+text = "Master Volume"
+horizontal_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MasterLabel" unique_id=456541389]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 36.0
+min_value = 0.001
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="MusicLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=553383409]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Music Volume"
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MusicLabel" unique_id=1680748108]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 36.0
+min_value = 0.001
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SFXLabek" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1361837297]
+layout_mode = 2
+text = "SFX Volume"
+horizontal_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/SFXLabek" unique_id=968377090]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 100.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 36.0
+min_value = 0.001
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="VideoGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1434918353]
+layout_mode = 2
+size_flags_vertical = 6
+columns = 2
+
+[node name="ResLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=783845935]
+layout_mode = 2
+text = "Resolution"
+horizontal_alignment = 1
+
+[node name="ResolutionOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResLabel" unique_id=1930829219]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25903615
+anchor_top = 0.06521739
+anchor_right = 0.7409639
+anchor_bottom = 0.9347826
+offset_left = 8.5
+offset_top = 23.5
+offset_right = 8.5
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ModeLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=978166687]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Window Mode"
+horizontal_alignment = 1
+
+[node name="WindowModeOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ModeLabel" unique_id=1933478674]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.5
+offset_top = 13.5
+offset_right = 23.5
+offset_bottom = 33.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsBackButton" type="Button" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=509271393]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "Back"

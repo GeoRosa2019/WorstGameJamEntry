@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
-[ext_resource type="PackedScene" uid="uid://t7jf3qh5ga1x" path="res://Scenes/Main_UI/main_ui.tscn" id="4_3dryh"]
 [ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="6_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
 
 [node name="Game" type="Node2D" unique_id=2071835739]
 
@@ -72,16 +73,26 @@ offset_right = 152.0
 offset_bottom = 145.0
 correctPort = "ram"
 
-[node name="MainUI" parent="." unique_id=1206325536 instance=ExtResource("4_3dryh")]
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-offset_left = 1079.0
-offset_top = 67.0
-offset_right = 1079.0
-offset_bottom = 67.0
-
 [node name="Granny\'sJamMastered" type="AudioStreamPlayer" parent="." unique_id=534286486]
 stream = ExtResource("5_wowpa")
 autoplay = true
 bus = &"Music"
+
+[node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("6_i6g32")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 542.0
+offset_top = 306.0
+offset_right = 542.0
+offset_bottom = 306.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="GrandmaNotes" parent="." unique_id=2135006344 instance=ExtResource("6_1l0tm")]
+offset_left = 1084.0
+offset_top = 70.0
+offset_right = 1084.0
+offset_bottom = 70.0
