@@ -52,15 +52,7 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Resume"
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="SettingsButton" type="Button" parent="ColorRect/PanelContainer/MarginContainer/VBoxContainer" unique_id=358767099]
-=======
-[node name="SettingsButton" type="Button" parent="ColorRect/PanelContainer/MarginContainer/VBoxContainer" unique_id=903045028]
->>>>>>> Stashed changes
-=======
-[node name="SettingsButton" type="Button" parent="ColorRect/PanelContainer/MarginContainer/VBoxContainer" unique_id=62625841]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 layout_mode = 2
 text = "Settings"
@@ -70,27 +62,15 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Quit"
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="SettingsMenu" type="PanelContainer" parent="." unique_id=1259624331]
 unique_name_in_owner = true
 visible = false
-=======
-[node name="SettingsMenu" type="PanelContainer" parent="." unique_id=362200626]
-unique_name_in_owner = true
->>>>>>> Stashed changes
-=======
-[node name="SettingsMenu" type="PanelContainer" parent="." unique_id=510603312]
-unique_name_in_owner = true
-visible = false
->>>>>>> Stashed changes
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-<<<<<<< Updated upstream
 offset_left = -156.0
 offset_top = -104.0
 offset_right = 144.0
@@ -98,7 +78,6 @@ offset_bottom = 96.0
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
 [node name="ColorRect" type="ColorRect" parent="SettingsMenu" unique_id=827065364]
 layout_mode = 2
 color = Color(0, 0, 0, 1)
@@ -110,74 +89,19 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="TitleLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1894989849]
-=======
-[node name="MarginContainer" type="MarginContainer" parent="SettingsMenu" unique_id=1322293390]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="SettingsMenu/MarginContainer" unique_id=1032759368]
-layout_mode = 2
-color = Color(0, 0, 0, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsMenu/MarginContainer" unique_id=1394970377]
-layout_mode = 2
-
-[node name="TitleLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=888813062]
->>>>>>> Stashed changes
-=======
-offset_left = -125.0
-offset_top = -125.0
-offset_right = 125.0
-offset_bottom = 95.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="SettingsMenu" unique_id=526149522]
-layout_mode = 2
-color = Color(0, 0, 0, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="SettingsMenu" unique_id=96522627]
-layout_mode = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="SettingsMenu/MarginContainer" unique_id=529072981]
-layout_mode = 2
-
-[node name="TitleLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=205916585]
->>>>>>> Stashed changes
 layout_mode = 2
 text = "Settings"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="AudioGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1761125557]
 layout_mode = 2
 
 [node name="MasterLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1313546261]
-=======
-[node name="AudioGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1666015279]
-layout_mode = 2
-
-[node name="MasterLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1481095538]
->>>>>>> Stashed changes
-=======
-[node name="AudioGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1732129329]
-layout_mode = 2
-
-[node name="MasterLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=828997476]
->>>>>>> Stashed changes
 layout_mode = 2
 text = "Master Volume"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="MasterSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MasterLabel" unique_id=456541389]
-=======
-[node name="MasterSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MasterLabel" unique_id=1877232940]
->>>>>>> Stashed changes
-=======
-[node name="MasterSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MasterLabel" unique_id=88780059]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 0
@@ -190,29 +114,13 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="MusicLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=553383409]
-=======
-[node name="MusicLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1839509035]
->>>>>>> Stashed changes
-=======
-[node name="MusicLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1048050639]
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Music Volume"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="MusicSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MusicLabel" unique_id=1680748108]
-=======
-[node name="MusicSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MusicLabel" unique_id=1059404778]
->>>>>>> Stashed changes
-=======
-[node name="MusicSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MusicLabel" unique_id=1771601941]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 0
@@ -225,28 +133,12 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="SFXLabek" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1361837297]
-=======
-[node name="SFXLabek" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=2099161032]
->>>>>>> Stashed changes
-=======
-[node name="SFXLabek" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=1772052032]
->>>>>>> Stashed changes
 layout_mode = 2
 text = "SFX Volume"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="SFXSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/SFXLabek" unique_id=968377090]
-=======
-[node name="SFXSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/SFXLabek" unique_id=2100885611]
->>>>>>> Stashed changes
-=======
-[node name="SFXSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/SFXLabek" unique_id=1902129110]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 0
@@ -259,41 +151,17 @@ max_value = 1.0
 step = 0.05
 value = 1.0
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="VideoGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1434918353]
-=======
-[node name="VideoGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1908853232]
->>>>>>> Stashed changes
-=======
-[node name="VideoGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=508638971]
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_vertical = 6
 columns = 2
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="ResLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=783845935]
-=======
-[node name="ResLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=2075269082]
->>>>>>> Stashed changes
-=======
-[node name="ResLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=1122460465]
->>>>>>> Stashed changes
 layout_mode = 2
 text = "Resolution"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="ResolutionOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResLabel" unique_id=1930829219]
-=======
-[node name="ResolutionOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResLabel" unique_id=41301579]
->>>>>>> Stashed changes
-=======
-[node name="ResolutionOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResLabel" unique_id=426921347]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
@@ -308,29 +176,13 @@ offset_bottom = 23.5
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="ModeLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=978166687]
-=======
-[node name="ModeLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=960335041]
->>>>>>> Stashed changes
-=======
-[node name="ModeLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=1241729801]
->>>>>>> Stashed changes
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Window Mode"
 horizontal_alignment = 1
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="WindowModeOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ModeLabel" unique_id=1933478674]
-=======
-[node name="WindowModeOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ModeLabel" unique_id=737939354]
->>>>>>> Stashed changes
-=======
-[node name="WindowModeOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ModeLabel" unique_id=131102880]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
@@ -345,15 +197,7 @@ offset_bottom = 33.5
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [node name="SettingsBackButton" type="Button" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=509271393]
-=======
-[node name="SettingsBackButton" type="Button" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=119064412]
->>>>>>> Stashed changes
-=======
-[node name="SettingsBackButton" type="Button" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1739644724]
->>>>>>> Stashed changes
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4

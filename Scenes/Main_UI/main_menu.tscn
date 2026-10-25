@@ -1,10 +1,6 @@
 [gd_scene format=3 uid="uid://51ubkr7cteuy"]
 
-<<<<<<< Updated upstream
-[ext_resource type="Script" uid="uid://dkowp6f1mrwa0" path="res://Scripts/main_menu (2).gd" id="1_bpeqt"]
-=======
 [ext_resource type="Script" uid="uid://dkowp6f1mrwa0" path="res://Scripts/main_menu.gd" id="1_bpeqt"]
->>>>>>> Stashed changes
 [ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="2_ixk4c"]
 
 [node name="main_menu" type="Control" unique_id=1164924411]
