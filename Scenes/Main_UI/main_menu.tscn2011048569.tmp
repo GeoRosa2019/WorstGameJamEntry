@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://51ubkr7cteuy"]
+
+[ext_resource type="Script" uid="uid://dkowp6f1mrwa0" path="res://Scenes/Main_UI/main_menu.gd" id="1_bpeqt"]
+
+[node name="main_menu" type="Control" unique_id=1164924411]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bpeqt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1044712551]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5019608)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=429751468]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -68.0
+offset_right = 35.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=243616118]
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2130774649]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1914849498]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=805831653]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=158436136]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"
+
+[node name="SettingsMenu" type="PanelContainer" parent="." unique_id=45634970]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -83.0
+offset_right = 59.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="SettingsMenu" unique_id=1105243642]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsMenu/MarginContainer" unique_id=2118327231]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=1769827792]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="AudioGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=400829168]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MasterLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=464800228]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Master Volume"
+horizontal_alignment = 1
+
+[node name="MasterSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MasterLabel" unique_id=894329016]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="MusicLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=455194004]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Music Volume"
+horizontal_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/MusicLabel" unique_id=551949861]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="SFXLabek" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid" unique_id=2001112794]
+unique_name_in_owner = true
+layout_mode = 2
+text = "SFX Volume"
+horizontal_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="SettingsMenu/MarginContainer/VBoxContainer/AudioGrid/SFXLabek" unique_id=226245055]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="VideoGrid" type="GridContainer" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=415843292]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ResolutionLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid" unique_id=1373044790]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Resolution"
+
+[node name="ResolutionOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResolutionLabel" unique_id=1332065850]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 20.0
+
+[node name="ModeLabel" type="Label" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResolutionLabel/ResolutionOption" unique_id=1574647616]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Window Mode"
+
+[node name="WindowModeOption" type="OptionButton" parent="SettingsMenu/MarginContainer/VBoxContainer/VideoGrid/ResolutionLabel/ResolutionOption/ModeLabel" unique_id=343002052]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 20.0
+
+[node name="SettingsBackButton" type="Button" parent="SettingsMenu/MarginContainer/VBoxContainer" unique_id=141546533]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Back"
