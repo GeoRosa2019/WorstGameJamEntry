@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://t7jf3qh5ga1x" path="res://Scenes/Main_UI/main_ui.tscn" id="4_3dryh"]
+[ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="5_wowpa"]
 
 [node name="Game" type="Node2D" unique_id=2071835739]
 
@@ -75,7 +76,12 @@ correctPort = "ram"
 anchors_preset = -1
 anchor_left = 0.0
 anchor_top = 0.0
-offset_left = 1851.0
+offset_left = 1079.0
 offset_top = 67.0
-offset_right = 1851.0
+offset_right = 1079.0
 offset_bottom = 67.0
+
+[node name="Granny\'sJamMastered" type="AudioStreamPlayer" parent="." unique_id=534286486]
+stream = ExtResource("5_wowpa")
+autoplay = true
+bus = &"Music"
