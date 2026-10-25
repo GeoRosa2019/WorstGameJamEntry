@@ -2,6 +2,8 @@ extends Node2D
 
 signal puzzleSolved
 
+@export var totalRounds := 3
+var currentRound := 1
 var solved := false
 
 @export var winLabel: Label
