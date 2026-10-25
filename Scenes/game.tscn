@@ -2,10 +2,23 @@
 
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
 [ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
+=======
+[ext_resource type="Texture2D" uid="uid://1ya3e3b2oxo6" path="res://Assets/Placeholder Images/Stock Graphics Card.jpg" id="3_o5yvi"]
+[ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="4_h4fw4"]
+[ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="4_i6g32"]
+[ext_resource type="Texture2D" uid="uid://di75xn8a4lwkk" path="res://Assets/Placeholder Images/ram.jpg" id="4_rku1e"]
+[ext_resource type="Texture2D" uid="uid://ravp3yt0700x" path="res://Assets/Placeholder Images/cpu.jpeg" id="5_rfjv2"]
+[ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="5_wowpa"]
+[ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="6_1l0tm"]
+[ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
+[ext_resource type="Texture2D" uid="uid://gvyhjkdvlxr1" path="res://Assets/Placeholder Images/screwdriver.jpeg" id="6_ldgsr"]
+[ext_resource type="Texture2D" uid="uid://2u4inm6hjpa5" path="res://Assets/Placeholder Images/pipe.jpeg" id="7_o5yvi"]
+>>>>>>> Stashed changes
 
 [node name="Game" type="Node2D" unique_id=2071835739]
 
@@ -72,12 +85,51 @@ offset_top = 105.0
 offset_right = 152.0
 offset_bottom = 145.0
 correctPort = "ram"
+<<<<<<< Updated upstream
+=======
+requiredTools = Array[String](["wrench"])
+
+[node name="Tools" type="Node" parent="." unique_id=1598584889]
+
+[node name="Thermal" type="TextureRect" parent="Tools" unique_id=226089607]
+offset_top = 602.0
+offset_right = 40.0
+offset_bottom = 642.0
+mouse_filter = 0
+texture = ExtResource("4_h4fw4")
+expand_mode = 1
+script = ExtResource("4_i6g32")
+toolName = "thermal"
+
+[node name="screwdriver" type="TextureRect" parent="Tools" unique_id=1963458601]
+offset_left = 53.0
+offset_top = 602.0
+offset_right = 93.0
+offset_bottom = 642.0
+mouse_filter = 0
+texture = ExtResource("6_ldgsr")
+expand_mode = 1
+script = ExtResource("4_i6g32")
+toolName = "screwdriver"
+
+[node name="wrench" type="TextureRect" parent="Tools" unique_id=1410793377]
+offset_left = 120.0
+offset_top = 600.0
+offset_right = 160.0
+offset_bottom = 640.0
+mouse_filter = 0
+texture = ExtResource("7_o5yvi")
+expand_mode = 1
+script = ExtResource("4_i6g32")
+toolName = "wrench"
+>>>>>>> Stashed changes
 
 [node name="Granny\'sJamMastered" type="AudioStreamPlayer" parent="." unique_id=534286486]
 stream = ExtResource("5_wowpa")
 autoplay = true
 bus = &"Music"
 
+<<<<<<< Updated upstream
 [node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("6_i6g32")]
 anchors_preset = 8
 anchor_left = 0.5
@@ -96,3 +148,17 @@ offset_left = 1084.0
 offset_top = 70.0
 offset_right = 1084.0
 offset_bottom = 70.0
+=======
+[node name="GrandmaNotes" parent="." unique_id=2135006344 instance=ExtResource("6_1l0tm")]
+offset_left = 1084.0
+offset_top = 69.0
+offset_right = 1084.0
+offset_bottom = 69.0
+
+[node name="PauseMenu" parent="." unique_id=519856639 instance=ExtResource("6_i6g32")]
+visible = false
+offset_left = 554.0
+offset_top = 309.0
+offset_right = 554.0
+offset_bottom = 309.0
+>>>>>>> Stashed changes
