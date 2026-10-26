@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://ce6gcqrqobaor" path="res://icon.svg" id="2_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://1ya3e3b2oxo6" path="res://Assets/Placeholder Images/Stock Graphics Card.jpg" id="3_o5yvi"]
 [ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="4_h4fw4"]
 [ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="4_i6g32"]
@@ -33,47 +32,50 @@ vertical_alignment = 1
 
 [node name="Parts" type="Node" parent="." unique_id=616493389]
 
-[node name="TextureRect" parent="Parts" unique_id=1061855505 instance=ExtResource("1_ebmjs")]
+[node name="TextureRect" parent="Parts" unique_id=1061855505 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 3.0
 offset_top = 4.0
 offset_right = 43.0
 offset_bottom = 44.0
-texture = ExtResource("2_qxrlw")
+texture = ExtResource("3_o5yvi")
+expand_mode = 0
 partName = "gpu"
 
-[node name="TextureRect5" parent="Parts" unique_id=490311645 instance=ExtResource("1_ebmjs")]
+[node name="TextureRect5" parent="Parts" unique_id=490311645 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 6.0
 offset_top = 128.0
 offset_right = 46.0
 offset_bottom = 168.0
-texture = ExtResource("2_qxrlw")
+texture = ExtResource("4_rku1e")
 partName = "ram"
 
-[node name="TextureRect6" parent="Parts" unique_id=1523729085 instance=ExtResource("1_ebmjs")]
+[node name="TextureRect6" parent="Parts" unique_id=1523729085 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 3.0
 offset_top = 215.0
 offset_right = 43.0
 offset_bottom = 255.0
-texture = ExtResource("2_qxrlw")
-partName = "ram"
+texture = ExtResource("5_rfjv2")
+partName = "fan"
 
 [node name="Motherboard" type="Node" parent="." unique_id=1393907119]
 
-[node name="TextureRect2" parent="Motherboard" unique_id=1946607140 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
+[node name="TextureRect2" parent="Motherboard" unique_id=1946607140 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 111.0
 offset_top = 5.0
 offset_right = 151.0
 offset_bottom = 45.0
 correctPort = "gpu"
+requiredTools = Array[String](["screwdriver"])
 
-[node name="TextureRect3" parent="Motherboard" unique_id=639951782 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
+[node name="TextureRect3" parent="Motherboard" unique_id=639951782 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 271.0
 offset_top = 5.0
 offset_right = 311.0
 offset_bottom = 45.0
-correctPort = "ram"
+correctPort = "fan"
+requiredTools = Array[String](["thermal"])
 
-[node name="TextureRect4" parent="Motherboard" unique_id=201067813 groups=["pcSlots"] instance=ExtResource("1_ebmjs")]
+[node name="TextureRect4" parent="Motherboard" unique_id=201067813 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 112.0
 offset_top = 105.0
 offset_right = 152.0
