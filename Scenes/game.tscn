@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="1_ebmjs"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
-[ext_resource type="Texture2D" uid="uid://1ya3e3b2oxo6" path="res://Assets/Placeholder Images/Stock Graphics Card.jpg" id="3_o5yvi"]
+[ext_resource type="Texture2D" uid="uid://dk4yem3k736tx" path="res://Assets/Art/fan_single.png" id="3_rku1e"]
 [ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="4_h4fw4"]
 [ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="4_i6g32"]
-[ext_resource type="Texture2D" uid="uid://di75xn8a4lwkk" path="res://Assets/Placeholder Images/ram.jpg" id="4_rku1e"]
-[ext_resource type="Texture2D" uid="uid://ravp3yt0700x" path="res://Assets/Placeholder Images/cpu.jpeg" id="5_rfjv2"]
+[ext_resource type="Texture2D" uid="uid://s0w4p0xauhls" path="res://Assets/Art/ram_-_Copy.png" id="4_rfjv2"]
+[ext_resource type="Texture2D" uid="uid://cwwfiv1vyeovs" path="res://Assets/Art/mother_board_-_Copy.png" id="5_1phco"]
 [ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="5_wowpa"]
 [ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
@@ -33,20 +33,20 @@ vertical_alignment = 1
 [node name="Parts" type="Node" parent="." unique_id=616493389]
 
 [node name="TextureRect" parent="Parts" unique_id=1061855505 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 43.0
-offset_bottom = 44.0
-texture = ExtResource("3_o5yvi")
+offset_left = 7.0
+offset_top = 6.0
+offset_right = 47.0
+offset_bottom = 46.0
+texture = ExtResource("3_rku1e")
 expand_mode = 0
-partName = "gpu"
+partName = "fan"
 
 [node name="TextureRect5" parent="Parts" unique_id=490311645 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
 offset_left = 6.0
 offset_top = 128.0
 offset_right = 46.0
 offset_bottom = 168.0
-texture = ExtResource("4_rku1e")
+texture = ExtResource("4_rfjv2")
 partName = "ram"
 
 [node name="TextureRect6" parent="Parts" unique_id=1523729085 groups=["resetNodes"] instance=ExtResource("1_ebmjs")]
@@ -54,8 +54,8 @@ offset_left = 3.0
 offset_top = 215.0
 offset_right = 43.0
 offset_bottom = 255.0
-texture = ExtResource("5_rfjv2")
-partName = "fan"
+texture = ExtResource("5_1phco")
+partName = "motherboard"
 
 [node name="Motherboard" type="Node" parent="." unique_id=1393907119]
 
@@ -64,7 +64,7 @@ offset_left = 111.0
 offset_top = 5.0
 offset_right = 151.0
 offset_bottom = 45.0
-correctPort = "gpu"
+correctPort = "fan"
 requiredTools = Array[String](["screwdriver"])
 
 [node name="TextureRect3" parent="Motherboard" unique_id=639951782 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
@@ -72,7 +72,7 @@ offset_left = 271.0
 offset_top = 5.0
 offset_right = 311.0
 offset_bottom = 45.0
-correctPort = "fan"
+correctPort = "motherboard"
 requiredTools = Array[String](["thermal"])
 
 [node name="TextureRect4" parent="Motherboard" unique_id=201067813 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
