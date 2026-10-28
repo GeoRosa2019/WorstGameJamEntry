@@ -5,13 +5,13 @@ extends TextureRect
 @export var requiredTools: Array[String] = []   
 
 signal partChange
+signal partPlaced(isRight: bool)
+signal toolUsed(isRight: bool)
 
 var appliedTools: Array[String] = []            #tools used on this slot so far
 var draggedTexture: Texture2D = null
 var draggedName: String = ""
 var draggedTools: Array[String] = []            # remembered in case the drop fails
-
-# for The game manager screipt to reset
 var startTexture: Texture2D
 var startName: String
 
@@ -25,7 +25,6 @@ func resetToStart():
 	appliedTools.clear()
 	updateColor()
 
-# Triggers when you click and drag
 func _get_drag_data(at_position):
 	if texture == null:
 		return null
@@ -39,10 +38,9 @@ func _get_drag_data(at_position):
 	preview.add_child(preview_texture)
 	set_drag_preview(preview)
 
-	#Saved the Texture
 	draggedTexture = texture
 	draggedName = partName
-	draggedTools = appliedTools.duplicate()      # NEW
+	draggedTools = appliedTools.duplicate()     
 
 	#Clear the node if no longer in use
 	texture = null
@@ -58,7 +56,7 @@ func _get_drag_data(at_position):
 		"source": self
 	}
 
-# Triggers when you hover with dragged item
+# Remember to fix bug with the slots
 func _can_drop_data(_pos, data):
 	if not (data is Dictionary and data.has("type")):
 		return false
@@ -69,9 +67,7 @@ func _can_drop_data(_pos, data):
 
 	return data["type"] == "part"
 
-# Triggers when you drop item
 func _drop_data(_pos, data):
-	# NEW: a tool was dropped on this slot
 	if data["type"] == "tool":
 		useTool(data["toolName"])
 		return
@@ -79,24 +75,28 @@ func _drop_data(_pos, data):
 	if texture != null:
 		data["source"].texture = texture
 		data["source"].partName = partName
-		data["source"].appliedTools = appliedTools.duplicate()   # NEW
-		data["source"].updateColor()                             # NEW: fixes source color after a swap
+		data["source"].appliedTools = appliedTools.duplicate()   
+		data["source"].updateColor()                            
 
 	texture = data["texture"]
 	partName = data["partName"]
-	appliedTools = data["appliedTools"].duplicate()              # NEW
+	appliedTools = data["appliedTools"].duplicate()           
 
-	# Color first, then signal, so the manager sees the final state
 	updateColor()
+	if correctPort != "":   # motherboard slots only
+		partPlaced.emit(partName == correctPort)
 	partChange.emit()
 	if data["source"] != self:
 		data["source"].partChange.emit()
+
 
 func useTool(toolName: String):
 	if toolName in requiredTools and partName == correctPort:
 		if toolName not in appliedTools:
 			appliedTools.append(toolName)
+		toolUsed.emit(true)
 	else:
+		toolUsed.emit(false)
 		flashWrong()
 	updateColor()
 	partChange.emit()
@@ -107,18 +107,17 @@ func _notification(notify):
 			if not get_viewport().gui_is_drag_successful():
 				texture = draggedTexture
 				partName = draggedName
-				appliedTools = draggedTools.duplicate()          # NEW
-				updateColor()                                    # NEW
+				appliedTools = draggedTools.duplicate()          
+				updateColor()                                    
 			draggedTexture = null
 			draggedName = ""
-			draggedTools.clear()                                 # NEW
+			draggedTools.clear()                               
 
 #Checker
 func isCorrect() -> bool:
 	if partName == "" or partName != correctPort:
 		return false
-	for t in requiredTools:                                      # NEW: every tool must be used
-		if t not in appliedTools:
+	for t in requiredTools:                                      
 			return false
 	return true
 
@@ -131,9 +130,9 @@ func updateColor():
 	elif isCorrect():
 		modulate = Color.GREEN
 	elif partName == correctPort:
-		modulate = Color.YELLOW      # right part, still needs tools
+		modulate = Color.YELLOW     
 	else:
-		modulate = Color.CRIMSON     # wrong part
+		modulate = Color.CRIMSON     
 
 # Quick red flash for a wrong tool
 func flashWrong():

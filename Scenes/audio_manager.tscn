@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bte1tc3728u01"]
+
+[ext_resource type="Script" uid="uid://buvfqk6q8s7je" path="res://Scripts/audio_manager.gd" id="1_sm2tf"]
+[ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="2_qixve"]
+[ext_resource type="AudioStream" uid="uid://b23iyyrpw7ugb" path="res://Assets/Audio/Music/granny's jam distorted.mp3" id="3_0hehx"]
+[ext_resource type="AudioStream" uid="uid://2bjl7ljnegfy" path="res://Assets/Audio/Music/granny's jam 2 bit.mp3" id="4_mjqhu"]
+[ext_resource type="AudioStream" uid="uid://73ji5bvasdgo" path="res://Assets/Audio/SFX/Correct/correct 1.mp3" id="5_tnn7g"]
+[ext_resource type="AudioStream" uid="uid://cwoygv28qlesu" path="res://Assets/Audio/SFX/Wrong/wrong long 12.mp3" id="6_lwpe1"]
+[ext_resource type="AudioStream" uid="uid://u1t8uv0qq3wc" path="res://Assets/Audio/SFX/Correct/correct 3.mp3" id="7_jmilc"]
+[ext_resource type="AudioStream" uid="uid://bdjvx4jpm341y" path="res://Assets/Audio/SFX/Wrong/Deadass.wav" id="8_5nrbi"]
+
+[node name="AudioManager" type="Node2D" unique_id=2063209635]
+script = ExtResource("1_sm2tf")
+roundMusic = Array[AudioStream]([ExtResource("2_qixve"), ExtResource("3_0hehx"), ExtResource("4_mjqhu")])
+
+[node name="correctSound" type="AudioStreamPlayer" parent="." unique_id=1464979675]
+stream = ExtResource("5_tnn7g")
+
+[node name="wrongSound" type="AudioStreamPlayer" parent="." unique_id=359784070]
+stream = ExtResource("6_lwpe1")
+
+[node name="toolkitCorrectSound" type="AudioStreamPlayer" parent="." unique_id=1030503694]
+stream = ExtResource("7_jmilc")
+
+[node name="toolkitWrongSound" type="AudioStreamPlayer" parent="." unique_id=1095019950]
+stream = ExtResource("8_5nrbi")
+
+[node name="bgMusic" type="AudioStreamPlayer" parent="." unique_id=1642009391]

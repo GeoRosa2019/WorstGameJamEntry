@@ -27,9 +27,24 @@ func shuffleSlots():
 func _ready():
 	winLabel.hide()
 	shuffleSlots()
+	AudioManager.playRoundMusic(currentRound)
+	#Check if needed to add slot ports
 	for slot in get_tree().get_nodes_in_group("pcSlots"):
 		slot.partChange.connect(checkAll)
-	
+		slot.partPlaced.connect(onPartPlaced)
+		slot.toolUsed.connect(onToolUsed)
+
+func onPartPlaced(isRight: bool):
+	if isRight:
+		AudioManager.playCorrect()
+	else:
+		AudioManager.playWrong()
+
+func onToolUsed(isRight: bool):
+	if isRight:
+		AudioManager.playToolCorrect()
+	else:
+		AudioManager.playToolWrong()
 		
 func checkAll():
 	if solved:
@@ -40,6 +55,8 @@ func checkAll():
 	solved = true
 	if currentRound >= totalRounds:
 		puzzleSolved.emit()
+		AudioManager.playMusic(AudioManager.winMusic)
+		#Make win Screen
 		get_tree().change_scene_to_file("res://winScreen.tscn")
 	else:
 		winLabel.text = "Round %d complete!" % currentRound
@@ -50,6 +67,7 @@ func checkAll():
 
 func nextRound():
 	currentRound += 1
+	AudioManager.playRoundMusic(currentRound)
 	for node in get_tree().get_nodes_in_group("resetNodes"):
 		node.resetToStart()
 	shuffleSlots()

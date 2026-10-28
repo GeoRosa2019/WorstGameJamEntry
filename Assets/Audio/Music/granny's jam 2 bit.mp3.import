@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2bjl7ljnegfy"
+path="res://.godot/imported/granny's jam 2 bit.mp3-c954ffe2330928f7891e8683cc67fc5d.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/granny's jam 2 bit.mp3"
+dest_files=["res://.godot/imported/granny's jam 2 bit.mp3-c954ffe2330928f7891e8683cc67fc5d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
