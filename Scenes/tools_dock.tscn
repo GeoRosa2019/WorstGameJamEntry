@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://b8i0akydim0cb"]
+
+[ext_resource type="Script" uid="uid://dai8im2qswq2a" path="res://Scripts/tools_dock.gd" id="1_67b7w"]
+[ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="2_tglyu"]
+[ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="3_5227l"]
+[ext_resource type="Texture2D" uid="uid://gvyhjkdvlxr1" path="res://Assets/Placeholder Images/screwdriver.jpeg" id="4_rexou"]
+[ext_resource type="Texture2D" uid="uid://2u4inm6hjpa5" path="res://Assets/Placeholder Images/pipe.jpeg" id="5_4j7eb"]
+
+[node name="ToolsDock" type="Control" unique_id=1687721431]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+script = ExtResource("1_67b7w")
+
+[node name="DockContainer" type="VBoxContainer" parent="." unique_id=1849709507]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="TabHeader" type="PanelContainer" parent="DockContainer" unique_id=561191703]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DockContainer/TabHeader" unique_id=967065028]
+layout_mode = 2
+text = "Tools"
+horizontal_alignment = 1
+
+[node name="ContentPanel" type="PanelContainer" parent="DockContainer" unique_id=1696302785]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DockContainer/ContentPanel" unique_id=317695109]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DockContainer/ContentPanel/MarginContainer" unique_id=1314551911]
+layout_mode = 2
+
+[node name="Thermal" type="TextureRect" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=588512373]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("2_tglyu")
+expand_mode = 1
+script = ExtResource("3_5227l")
+toolName = "thermal"
+
+[node name="screwdriver" type="TextureRect" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=930091739]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("4_rexou")
+expand_mode = 1
+script = ExtResource("3_5227l")
+toolName = "screwdriver"
+
+[node name="wrench" type="TextureRect" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=1969202616]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("5_4j7eb")
+expand_mode = 1
+script = ExtResource("3_5227l")
+toolName = "wrench"

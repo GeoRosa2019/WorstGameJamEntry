@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://0ibfjefg6n5y"]
+
+[ext_resource type="Script" uid="uid://b4iwnykixuxat" path="res://Scripts/parts_dock.gd" id="1_svie3"]
+[ext_resource type="PackedScene" uid="uid://dwoo36u4g25ce" path="res://Scenes/texture_rect.tscn" id="2_bi631"]
+[ext_resource type="Texture2D" uid="uid://dk4yem3k736tx" path="res://Assets/Art/fan_single.png" id="3_i28lb"]
+[ext_resource type="Texture2D" uid="uid://s0w4p0xauhls" path="res://Assets/Art/ram_-_Copy.png" id="4_0dq8c"]
+[ext_resource type="Texture2D" uid="uid://cwwfiv1vyeovs" path="res://Assets/Art/mother_board_-_Copy.png" id="5_5gvxd"]
+
+[node name="PartsDock" type="Control" unique_id=565841081]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("1_svie3")
+
+[node name="DockContainer" type="VBoxContainer" parent="." unique_id=488134467]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -127.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TabHeader" type="PanelContainer" parent="DockContainer" unique_id=900731689]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="DockContainer/TabHeader" unique_id=614646529]
+layout_mode = 2
+text = "Tools"
+horizontal_alignment = 1
+
+[node name="ContentPanel" type="PanelContainer" parent="DockContainer" unique_id=1584143979]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DockContainer/ContentPanel" unique_id=1349519055]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DockContainer/ContentPanel/MarginContainer" unique_id=1432574753]
+layout_mode = 2
+
+[node name="TextureRect" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=1061855505 groups=["resetNodes"] instance=ExtResource("2_bi631")]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+texture = ExtResource("3_i28lb")
+partName = "fan"
+
+[node name="TextureRect5" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=1972919038 groups=["resetNodes"] instance=ExtResource("2_bi631")]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+texture = ExtResource("4_0dq8c")
+partName = "ram"
+
+[node name="TextureRect6" parent="DockContainer/ContentPanel/MarginContainer/HBoxContainer" unique_id=1897551849 groups=["resetNodes"] instance=ExtResource("2_bi631")]
+custom_minimum_size = Vector2(100, 0)
+custom_maximum_size = Vector2(1000, 1000)
+layout_mode = 2
+texture = ExtResource("5_5gvxd")
+partName = "motherboard"
