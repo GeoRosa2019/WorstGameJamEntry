@@ -117,7 +117,8 @@ func _notification(notify):
 func isCorrect() -> bool:
 	if partName == "" or partName != correctPort:
 		return false
-	for t in requiredTools:                                      
+	for t in requiredTools:
+		if t not in appliedTools:                                      
 			return false
 	return true
 
