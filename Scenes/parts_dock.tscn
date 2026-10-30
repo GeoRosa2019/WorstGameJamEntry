@@ -36,7 +36,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="DockContainer/TabHeader" unique_id=614646529]
 layout_mode = 2
-text = "Tools"
+text = "Parts"
 horizontal_alignment = 1
 
 [node name="ContentPanel" type="PanelContainer" parent="DockContainer" unique_id=1584143979]

@@ -39,6 +39,12 @@ grow_vertical = 2
 unique_name_in_owner = true
 layout_mode = 2
 
+[node name="Label" type="Label" parent="CenterContainer/MainButtons" unique_id=189719559]
+layout_mode = 2
+text = "Granny's Tech Tips"
+horizontal_alignment = 1
+uppercase = true
+
 [node name="PlayButton" type="Button" parent="CenterContainer/MainButtons" unique_id=2130774649]
 unique_name_in_owner = true
 layout_mode = 2
@@ -241,10 +247,11 @@ text = "                 Granny's PC
 Created for The Worst Game Jam 2026
 
                    THE TEAM
-[Cael / Monkey_vert]:  Programming / UI 
-[Geo / Enclavehere]:  Programming / Design 
-[Pixel]: 2D Art
-[Bbmanu]: Audio
+Monkey_vert:  Programming / UI 
+Enclavehere:  Programming / Design 
+Pixel: 2D Art
+TT: 2D Art
+Bbmanu: Music & SFX
 
 Thank you for playing!!
 "

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b8i0akydim0cb"]
 
 [ext_resource type="Script" uid="uid://dai8im2qswq2a" path="res://Scripts/tools_dock.gd" id="1_67b7w"]
-[ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="2_tglyu"]
+[ext_resource type="Texture2D" uid="uid://dil57kqulao5x" path="res://Assets/Art/paste.png" id="2_67b7w"]
 [ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="3_5227l"]
-[ext_resource type="Texture2D" uid="uid://gvyhjkdvlxr1" path="res://Assets/Placeholder Images/screwdriver.jpeg" id="4_rexou"]
-[ext_resource type="Texture2D" uid="uid://2u4inm6hjpa5" path="res://Assets/Placeholder Images/pipe.jpeg" id="5_4j7eb"]
+[ext_resource type="Texture2D" uid="uid://c3ynelmyxb7qx" path="res://Assets/Art/screwdriver.png" id="4_tglyu"]
+[ext_resource type="Texture2D" uid="uid://1txgdfs4mfuf" path="res://Assets/Art/possibly_a_wrench.png" id="5_5227l"]
 
 [node name="ToolsDock" type="Control" unique_id=1687721431]
 layout_mode = 3
@@ -49,7 +49,7 @@ custom_minimum_size = Vector2(100, 0)
 custom_maximum_size = Vector2(1000, 1000)
 layout_mode = 2
 mouse_filter = 0
-texture = ExtResource("2_tglyu")
+texture = ExtResource("2_67b7w")
 expand_mode = 1
 script = ExtResource("3_5227l")
 toolName = "thermal"
@@ -59,7 +59,7 @@ custom_minimum_size = Vector2(100, 0)
 custom_maximum_size = Vector2(1000, 1000)
 layout_mode = 2
 mouse_filter = 0
-texture = ExtResource("4_rexou")
+texture = ExtResource("4_tglyu")
 expand_mode = 1
 script = ExtResource("3_5227l")
 toolName = "screwdriver"
@@ -69,7 +69,7 @@ custom_minimum_size = Vector2(100, 0)
 custom_maximum_size = Vector2(1000, 1000)
 layout_mode = 2
 mouse_filter = 0
-texture = ExtResource("5_4j7eb")
+texture = ExtResource("5_5227l")
 expand_mode = 1
 script = ExtResource("3_5227l")
 toolName = "wrench"
