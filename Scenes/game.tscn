@@ -4,14 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://dpocta81uoe71" path="res://Assets/Art/background.png" id="1_rfjv2"]
 [ext_resource type="Script" uid="uid://wmf02i6yw2my" path="res://Scripts/game_manager.gd" id="1_wrm1d"]
 [ext_resource type="Texture2D" uid="uid://dk4yem3k736tx" path="res://Assets/Art/fan_single.png" id="3_rku1e"]
-[ext_resource type="Texture2D" uid="uid://d1vty4t7c41tm" path="res://Assets/Placeholder Images/silvergrease1.main.jpg" id="4_h4fw4"]
 [ext_resource type="Script" uid="uid://4smapadieviu" path="res://Scripts/tool.gd" id="4_i6g32"]
 [ext_resource type="Texture2D" uid="uid://s0w4p0xauhls" path="res://Assets/Art/ram_-_Copy.png" id="4_rfjv2"]
 [ext_resource type="Texture2D" uid="uid://cwwfiv1vyeovs" path="res://Assets/Art/mother_board_-_Copy.png" id="5_1phco"]
 [ext_resource type="PackedScene" uid="uid://cleb5ojwot3yv" path="res://Scenes/Main_UI/grandma_notes.tscn" id="6_1l0tm"]
 [ext_resource type="PackedScene" uid="uid://md7xtu8pkqex" path="res://Scenes/Main_UI/pause_menu.tscn" id="6_i6g32"]
-[ext_resource type="Texture2D" uid="uid://gvyhjkdvlxr1" path="res://Assets/Placeholder Images/screwdriver.jpeg" id="6_ldgsr"]
-[ext_resource type="Texture2D" uid="uid://2u4inm6hjpa5" path="res://Assets/Placeholder Images/pipe.jpeg" id="7_o5yvi"]
+[ext_resource type="Texture2D" uid="uid://dil57kqulao5x" path="res://Assets/Art/paste.png" id="7_rku1e"]
+[ext_resource type="Texture2D" uid="uid://c3ynelmyxb7qx" path="res://Assets/Art/screwdriver.png" id="9_rfjv2"]
+[ext_resource type="Texture2D" uid="uid://1txgdfs4mfuf" path="res://Assets/Art/possibly_a_wrench.png" id="10_1phco"]
 
 [node name="Game" type="Node2D" unique_id=2071835739]
 
@@ -111,7 +111,7 @@ offset_top = 545.0
 offset_right = 112.0
 offset_bottom = 645.0
 mouse_filter = 0
-texture = ExtResource("4_h4fw4")
+texture = ExtResource("7_rku1e")
 expand_mode = 1
 script = ExtResource("4_i6g32")
 toolName = "thermal"
@@ -123,7 +123,7 @@ offset_top = 549.0
 offset_right = 219.0
 offset_bottom = 649.0
 mouse_filter = 0
-texture = ExtResource("6_ldgsr")
+texture = ExtResource("9_rfjv2")
 expand_mode = 1
 script = ExtResource("4_i6g32")
 toolName = "screwdriver"
@@ -135,7 +135,7 @@ offset_top = 554.0
 offset_right = 333.0
 offset_bottom = 654.0
 mouse_filter = 0
-texture = ExtResource("7_o5yvi")
+texture = ExtResource("10_1phco")
 expand_mode = 1
 script = ExtResource("4_i6g32")
 toolName = "wrench"
