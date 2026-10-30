@@ -57,7 +57,7 @@ func checkAll():
 		puzzleSolved.emit()
 		AudioManager.playMusic(AudioManager.winMusic)
 		#Make win Screen
-		get_tree().change_scene_to_file("res://winScreen.tscn")
+		get_tree().change_scene_to_file("res://Scenes/win_screen.tscn")
 	else:
 		winLabel.text = "Round %d complete!" % currentRound
 		winLabel.show()
