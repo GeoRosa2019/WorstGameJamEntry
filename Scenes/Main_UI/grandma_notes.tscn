@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cleb5ojwot3yv"]
 
 [ext_resource type="Script" uid="uid://cpomxycjhx2wm" path="res://Scripts/GrandmaNotes.gd" id="1_acq8x"]
-[ext_resource type="Texture2D" uid="uid://c3wa4saw8mllu" path="res://Assets/Placeholder Images/post-it-note-with-beautiful-shadow-1-3655962658.png" id="2_acq8x"]
+[ext_resource type="Texture2D" uid="uid://c18n2f5awm7sw" path="res://Assets/Art/grandma.png" id="2_1i6ul"]
 
 [node name="GrandmaNotes" type="Control" unique_id=2135006344]
 layout_mode = 3
@@ -28,7 +28,7 @@ offset_right = 68.0
 offset_bottom = 68.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("2_acq8x")
+icon = ExtResource("2_1i6ul")
 icon_alignment = 1
 expand_icon = true
 
@@ -76,7 +76,7 @@ grow_horizontal = 0
 text = "X"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="NotePopup/MarginContainer/VBoxContainer" unique_id=396741223]
-custom_minimum_size = Vector2(0, 250)
+custom_minimum_size = Vector2(0, 350)
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -85,13 +85,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 bbcode_enabled = true
-text = "[b]How to Build Grandma's PC:[/b]
+text = "Granny's Technology Tips
 
-1. [color=lightblue]Tools:[/color] Click a tool in the bottom-left bar to equip it (Screwdriver, Thermal Paste).
-2. [color=yellow]Parts:[/color] Open the Parts panel in the bottom-right and drag a component to the frame.
-3. [color=green]Sockets:[/color] Ensure CPU and RAM socket types match the Motherboard before dropping!
-
-[i]Tip: Remember to apply thermal paste before attaching the CPU cooler![/i]"
+1. [color=yellow]Parts:[/color] Go inside the small pantry in the lower right-hand corner and drag whatever square piece of equipment seems comfy into the large metallic case. You don't have to be concerned with where it should fit in; just press it down hard enough till you hear a sound, that's how you'll know it's secured!
+2. [color=lightblue]Tools:[/color] Grab the metallic tool from the lower left-hand corner that seems to speak to your soul, honey! If there's some recalcitrant piece of equipment giving you trouble, give it a good whack with the heavy wrench—computers need a little encouragement sometimes!
+3. [color=green]Sockets:[/color] Watch carefully how the slot treats its guest, honey! If it turns a fiery red, oh my, that's not a good sign—it's having a little hissy fit and you need to remove it immediately! If it turns a sunny yellow, it's friendly, but you need to take a tool and adjust it a bit. And if it turns a gentle green, that's good news—everything is okay and ready to go!"
 fit_content = true
 
 [node name="CloseDialogButton" type="Button" parent="NotePopup/MarginContainer/VBoxContainer" unique_id=1936657861]
