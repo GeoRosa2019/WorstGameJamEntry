@@ -124,7 +124,7 @@ func _process(delta):
 		return
 	
 	hoverTime += delta
-	if hoverTime > 0.3: 
+	if hoverTime > 0.1: 
 		hoverTime = 0.0
 		if randf() < slideChance:
 			slide()

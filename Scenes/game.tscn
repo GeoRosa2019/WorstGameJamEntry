@@ -64,13 +64,33 @@ requiredTools = Array[String](["thermal"])
 
 [node name="TextureRect4" parent="Motherboard" unique_id=201067813 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
 custom_maximum_size = Vector2(1000, 1000)
-offset_left = 880.0
-offset_top = 213.0
-offset_right = 922.5
-offset_bottom = 254.25
+offset_left = 740.0
+offset_top = 152.0
+offset_right = 782.5
+offset_bottom = 193.25
 scale = Vector2(4, 4)
 correctPort = "ram"
 requiredTools = Array[String](["wrench"])
+
+[node name="TextureRect5" parent="Motherboard" unique_id=1061855505 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
+custom_maximum_size = Vector2(1000, 1000)
+offset_left = 438.0
+offset_top = 140.0
+offset_right = 480.5
+offset_bottom = 181.25
+scale = Vector2(4, 4)
+correctPort = "cpu"
+requiredTools = Array[String](["wrench"])
+
+[node name="TextureRect6" parent="Motherboard" unique_id=1070384160 groups=["pcSlots", "resetNodes"] instance=ExtResource("1_ebmjs")]
+custom_maximum_size = Vector2(1000, 1000)
+offset_left = 893.0
+offset_top = 383.0
+offset_right = 935.5
+offset_bottom = 424.25
+scale = Vector2(4, 4)
+correctPort = "ssd"
+requiredTools = Array[String](["thermal"])
 
 [node name="Tools" type="Node" parent="." unique_id=1598584889]
 
