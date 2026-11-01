@@ -205,7 +205,6 @@ text = "Back"
 
 [node name="CreditsMenu" type="PanelContainer" parent="." unique_id=176758766]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -249,8 +248,8 @@ Created for The Worst Game Jam 2026
                    THE TEAM
 Monkey_vert:  Programming / UI 
 Enclavehere:  Programming / Design 
-Pixel: 2D Art
-TT: 2D Art
+Pixelboy: 2D Art
+Platestectonic: 2D Art
 Bbmanu: Music & SFX
 
 Thank you for playing!!
