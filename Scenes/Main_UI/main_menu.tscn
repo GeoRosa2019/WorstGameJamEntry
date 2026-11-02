@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dkowp6f1mrwa0" path="res://Scripts/main_menu.gd" id="1_bpeqt"]
 [ext_resource type="AudioStream" uid="uid://cr2qu2loo8n7u" path="res://Assets/Audio/Music/granny's jam mastered.mp3" id="2_ixk4c"]
+[ext_resource type="Texture2D" uid="uid://c18n2f5awm7sw" path="res://Assets/Art/grandma.png" id="2_kwnxv"]
 
 [node name="main_menu" type="Control" unique_id=1164924411]
 layout_mode = 3
@@ -20,6 +21,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.5019608)
+
+[node name="Grandma" type="Sprite2D" parent="ColorRect" unique_id=239086289]
+position = Vector2(242, 82)
+texture = ExtResource("2_kwnxv")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=429751468]
 layout_mode = 1
@@ -205,6 +210,7 @@ text = "Back"
 
 [node name="CreditsMenu" type="PanelContainer" parent="." unique_id=176758766]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -242,7 +248,7 @@ offset_bottom = 188.0
 grow_horizontal = 2
 grow_vertical = 2
 bbcode_enabled = true
-text = "                 Granny's PC
+text = "                 Granny's Tech Tips
 Created for The Worst Game Jam 2026
 
                    THE TEAM
